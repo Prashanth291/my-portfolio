@@ -4,7 +4,7 @@ import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import CompetitiveProgramming from '../components/CompetitiveProgramming';
-
+import Experience from '../components/Experience';
 
 const Home = () => {
   return (
@@ -13,6 +13,7 @@ const Home = () => {
       <Hero />
       
       <About />
+      <Experience />
       <CompetitiveProgramming />
       <Skills />
       
