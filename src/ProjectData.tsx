@@ -16,7 +16,7 @@ export const projects: Project[] = [
     description: 'An AI-powered personalized learning platform featuring real-time interactive 3D avatars, visual explanations, and adaptive learning paths. Includes virtual laboratories for hands-on experimentation, enabling students to explore science concepts safely without physical equipment.',
     image: '/study-buddy.png',
     tags: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Three.js', 'WebSocket', 'RESTful APIs'],
-    githubLink: 'https://github.com/Prashanth291/StudyBuddy',
+    githubLink: 'https://github.com/prabhasg5/PREPfessor',
   },
   {
     id: 2,
