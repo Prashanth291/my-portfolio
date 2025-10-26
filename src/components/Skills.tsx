@@ -1,22 +1,38 @@
 import { motion } from 'framer-motion';
 // Import icons from react-icons
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGitAlt } from 'react-icons/fa';
-import { SiJavascript, SiTypescript, SiTailwindcss, SiMongodb, SiExpress, SiRedux, SiNextdotjs } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaJava } from 'react-icons/fa';
+import { FaPython } from 'react-icons/fa6';
+import { SiJavascript, SiTypescript, SiTailwindcss, SiMongodb, SiExpress, SiRedux, SiNextdotjs, SiDjango, SiC, SiFlask, SiMysql, SiPostgresql } from 'react-icons/si';
 
 // All skills in a single array
 const skills = [
-  { name: 'HTML5', icon: <FaHtml5 className="w-12 h-12" />, color: '#E34F26', proficiency: 95 },
-  { name: 'CSS3', icon: <FaCss3Alt className="w-12 h-12" />, color: '#1572B6', proficiency: 90 },
-  { name: 'JavaScript', icon: <SiJavascript className="w-12 h-12" />, color: '#F7DF1E', proficiency: 92 },
-  { name: 'TypeScript', icon: <SiTypescript className="w-12 h-12" />, color: '#3178C6', proficiency: 88 },
-  { name: 'React', icon: <FaReact className="w-12 h-12" />, color: '#61DAFB', proficiency: 93 },
-  { name: 'Next.js', icon: <SiNextdotjs className="w-12 h-12" />, color: '#FFFFFF', proficiency: 85 },
-  { name: 'Tailwind CSS', icon: <SiTailwindcss className="w-12 h-12" />, color: '#06B6D4', proficiency: 90 },
-  { name: 'Redux', icon: <SiRedux className="w-12 h-12" />, color: '#764ABC', proficiency: 87 },
-  { name: 'Node.js', icon: <FaNodeJs className="w-12 h-12" />, color: '#339933', proficiency: 85 },
-  { name: 'Express', icon: <SiExpress className="w-12 h-12" />, color: '#FFFFFF', proficiency: 82 },
-  { name: 'MongoDB', icon: <SiMongodb className="w-12 h-12" />, color: '#47A248', proficiency: 80 },
-  { name: 'Git', icon: <FaGitAlt className="w-12 h-12" />, color: '#F05032', proficiency: 88 },
+  // Core Programming Languages
+  { name: 'JavaScript', icon: <SiJavascript className="w-12 h-12" />, color: '#F7DF1E' },
+  { name: 'TypeScript', icon: <SiTypescript className="w-12 h-12" />, color: '#3178C6' },
+  { name: 'Python', icon: <FaPython className="w-12 h-12" />, color: '#3776AB' },
+  { name: 'Java', icon: <FaJava className="w-12 h-12" />, color: '#007396' },
+  { name: 'C', icon: <SiC className="w-12 h-12" />, color: '#A8B9CC' },
+  
+  // Frontend Technologies
+  { name: 'React', icon: <FaReact className="w-12 h-12" />, color: '#61DAFB' },
+  { name: 'HTML5', icon: <FaHtml5 className="w-12 h-12" />, color: '#E34F26' },
+  { name: 'CSS3', icon: <FaCss3Alt className="w-12 h-12" />, color: '#1572B6' },
+  { name: 'Tailwind CSS', icon: <SiTailwindcss className="w-12 h-12" />, color: '#06B6D4' },
+  
+  // Backend Technologies
+  { name: 'Node.js', icon: <FaNodeJs className="w-12 h-12" />, color: '#339933' },
+  { name: 'Express', icon: <SiExpress className="w-12 h-12" />, color: '#FFFFFF' },
+  { name: 'Django', icon: <SiDjango className="w-12 h-12" />, color: '#092E20' },
+  { name: 'Flask', icon: <SiFlask className="w-12 h-12" />, color: '#FFFFFF' },
+  
+  // Databases
+  { name: 'MongoDB', icon: <SiMongodb className="w-12 h-12" />, color: '#47A248' },
+  { name: 'PostgreSQL', icon: <SiPostgresql className="w-12 h-12" />, color: '#4169E1' },
+  { name: 'MySQL', icon: <SiMysql className="w-12 h-12" />, color: '#4479A1' },
+  
+  // Version Control
+  { name: 'Git', icon: <FaGitAlt className="w-12 h-12" />, color: '#F05032' },
+  { name: 'GitHub', icon: <FaGithub className="w-12 h-12" />, color: '#FFFFFF' },
 ];
 
 const containerVariants = {
@@ -64,9 +80,7 @@ const Skills = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
             My Tech <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Stack</span>
           </h2>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            A comprehensive toolkit of modern technologies and frameworks I use to build exceptional web applications
-          </p>
+
           <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto rounded-full mt-4"></div>
         </motion.div>
 
@@ -123,20 +137,7 @@ const Skills = () => {
           ))}
         </motion.div>
 
-        {/* Optional: Additional Info */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-16 text-center"
-        >
-          <div className="inline-block bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 max-w-3xl">
-            <p className="text-slate-400 text-lg leading-relaxed">
-              <span className="text-cyan-400 font-semibold">Always Learning:</span> I'm constantly expanding my skillset and staying up-to-date with the latest web technologies and best practices in software development.
-            </p>
-          </div>
-        </motion.div>
+       
       </div>
     </section>
   );

@@ -14,27 +14,27 @@ export interface CodingProfile {
 export const profiles: CodingProfile[] = [
   {
     name: 'LeetCode',
-    url: 'https://leetcode.com/your-username/',
+    url: 'https://leetcode.com/u/prashanth_d4/',
     image: '/src/assets/leetcode-logo.svg',
     color: '#FFA116'
   },
+    {
+    name: 'Codeforces',
+    url: 'https://codeforces.com/profile/prashanth_2327',
+    image: '/src/assets/CodeForces-logo.svg',
+    color: '#1F8ACB'
+  },
   {
     name: 'CodeChef',
-    url: 'https://www.codechef.com/users/your-username',
+    url: 'https://www.codechef.com/users/prashanth_d4',
     image: '/src/assets/leetcode-logo.svg',
     color: '#684E39'
   },
   {
     name: 'GeeksforGeeks',
-    url: 'https://auth.geeksforgeeks.org/user/your-username',
+    url: 'https://www.geeksforgeeks.org/user/prashanth2327/',
     image: '/src/assets/GfG-logo.png',
     color: '#2F8D46'
-  },
-  {
-    name: 'Codeforces',
-    url: 'https://codeforces.com/profile/your-username',
-    image: '/src/assets/CodeForces-logo.svg',
-    color: '#1F8ACB'
   },
 
 ];

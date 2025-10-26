@@ -36,7 +36,7 @@ const About = () => {
           
           {/* Image Column */}
           <motion.div 
-            className="w-full lg:w-2/5 flex justify-center"
+            className="w-full lg:w-2/5 flex justify-center relative -top-8"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -47,7 +47,7 @@ const About = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-3xl blur-xl opacity-20"></div>
               
               {/* Main Image Container */}
-              <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-96 lg:h-96">
+              <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-96 lg:h-96 ">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-3xl"></div>
                 <img 
                   src={profilePic} 
