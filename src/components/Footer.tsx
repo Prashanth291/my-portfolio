@@ -1,5 +1,5 @@
 
-import { FaGithub, FaLinkedin, FaHeart, FaEnvelope, FaMapMarkerAlt, FaCode } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaHeart, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 // Logo component (same as Navbar)
