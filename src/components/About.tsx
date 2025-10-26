@@ -9,10 +9,10 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="relative py-20 lg:py-28 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
+     <section id="about" className="relative py-20 lg:py-28 bg-white dark:bg-gradient-to-b dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 overflow-hidden transition-colors duration-300">
       {/* Background Decorative Elements */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl"></div>
+  <div className="absolute top-0 left-0 w-96 h-96 bg-cyan-700/20 dark:bg-blue-500/5 rounded-full blur-3xl"></div>
+  <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-600/20 dark:bg-cyan-500/5 rounded-full blur-3xl"></div>
       
       <div className="container mx-auto px-6 sm:px-8 lg:px-16 relative z-10">
         {/* Section Header */}
@@ -26,8 +26,8 @@ const About = () => {
           <span className="inline-block px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm font-semibold mb-4">
             Get To Know Me
           </span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-            About <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Me</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-cyan-900 dark:text-white mb-4">
+            About <span className="bg-gradient-to-r from-cyan-700 via-cyan-500 to-blue-500 bg-clip-text text-transparent dark:from-blue-400 dark:via-cyan-400 dark:to-blue-500">Me</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto rounded-full"></div>
         </motion.div>
@@ -78,21 +78,21 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="space-y-6 text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl">
+            <div className="space-y-6 text-slate-700 dark:text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl">
               <p>
-                Hey there! My journey in tech started with <span className="text-cyan-400 font-semibold">competitive programming</span>, where I fell in love with solving complex problems and finding the most efficient solutions. Over time, I’ve tackled more than <span className="text-white font-bold">1500+ algorithmic challenges</span> across different platforms — an experience that’s shaped the way I think and approach every project I build.
+                Hey there! My journey in tech started with <span className="text-cyan-400 font-semibold">competitive programming</span>, where I fell in love with solving complex problems and finding the most efficient solutions. Over time, I’ve tackled more than <span className="text-slate-900 dark:text-white font-bold">1500+ algorithmic challenges</span> across different platforms — an experience that’s shaped the way I think and approach every project I build.
               </p>
               
               <p>
-                That curiosity soon grew into a passion for <span className="text-cyan-400 font-semibold">full-stack development</span>, where I bring ideas to life through clean, functional, and meaningful applications. My research internship at the prestigious <span className="text-white font-bold">Indian Institute of Science (IISc), Bangalore</span> helped me bridge the gap between theory and real-world problem-solving, solidifying my drive to create technology that makes a difference.
+                That curiosity soon grew into a passion for <span className="text-cyan-400 font-semibold">full-stack development</span>, where I bring ideas to life through clean, functional, and meaningful applications. My research internship at the prestigious <span className="text-slate-900 dark:text-white font-bold">Indian Institute of Science (IISc), Bangalore</span> helped me bridge the gap between theory and real-world problem-solving, solidifying my drive to create technology that makes a difference.
               </p>
               
               <p>
                 These days, I work mainly with <span className="text-cyan-400 font-semibold">React, Node.js, and TypeScript</span>, constantly learning and exploring new tools to stay ahead. I love building applications that feel great to use — fast, reliable, and intuitive.
               </p>
               
-              <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-6 mt-8">
-                <h3 className="text-xl font-bold text-white mb-4 flex items-center">
+              <div className="bg-slate-200/50 dark:bg-slate-800/50 backdrop-blur-sm border border-slate-300/50 dark:border-slate-700/50 rounded-2xl p-6 mt-8">
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4 flex items-center">
                   <span className="w-8 h-8 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mr-3">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -100,7 +100,7 @@ const About = () => {
                   </span>
                   Beyond Coding
                 </h3>
-                <p className="text-slate-400">
+                <p className="text-slate-600 dark:text-slate-400">
                   When I’m not coding, I’m probably exploring new tech trends, experimenting with side projects, or diving into yet another algorithm just for fun.
                 </p>
               </div>
@@ -119,10 +119,10 @@ const About = () => {
                   key={index}
                   className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-4 text-center hover:border-cyan-500/50 transition-all duration-300 hover:transform hover:scale-105"
                 >
-                  <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                    {item.number}
-                  </div>
-                  <div className="text-slate-400 text-xs sm:text-sm mt-1">{item.label}</div>
+                    <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent dark:text-transparent text-slate-900">
+                      {item.number}
+                    </div>
+                    <div className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm mt-1">{item.label}</div>
                 </div>
               ))}
             </motion.div>

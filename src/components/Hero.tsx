@@ -5,11 +5,11 @@ const Hero = () => {
   return (
     <section 
       id="home" 
-      className="relative container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between px-6 sm:px-8 lg:px-16 pt-8 pb-16 min-h-[calc(100vh-5rem)] overflow-hidden"
+      className="relative container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between px-6 sm:px-8 lg:px-16 pt-8 pb-16 min-h-[calc(100vh-5rem)] overflow-hidden bg-white dark:bg-slate-900 transition-colors duration-300"
     >
       {/* Background Decorative Elements */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
+  <div className="absolute top-20 left-10 w-72 h-72 bg-cyan-700/20 dark:bg-blue-500/10 rounded-full blur-3xl"></div>
+  <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-600/20 dark:bg-cyan-500/10 rounded-full blur-3xl"></div>
       
       {/* ## Left Column: Text Content ## */}
       <motion.div 
@@ -19,18 +19,18 @@ const Hero = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         {/* Main Heading */}
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-[1.1]">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-cyan-900 dark:text-white mb-6 leading-[1.1]">
           I'm{' '}
-          <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-cyan-700 via-cyan-500 to-blue-500 bg-clip-text text-transparent dark:from-blue-400 dark:via-cyan-400 dark:to-blue-500">
             Prasanth Kumar
           </span>
           <br />
-          <span className="text-slate-300">Bollinedi</span>
+          <span className="text-cyan-800 dark:text-slate-300">Bollinedi</span>
         </h1>
         
         {/* Description / Tagline */}
-        <p className="text-lg sm:text-xl text-slate-400 mb-10 max-w-2xl mx-auto lg:mx-0">
-          A <span className="text-cyan-400 font-semibold">Competitive Programmer</span> at heart, a <span className="text-cyan-400 font-semibold">Full-Stack Developer</span> by craft.
+        <p className="text-lg sm:text-xl text-cyan-900 dark:text-slate-400 mb-10 max-w-2xl mx-auto lg:mx-0">
+          A <span className="text-cyan-700 dark:text-cyan-400 font-semibold">Competitive Programmer</span> at heart, a <span className="text-cyan-700 dark:text-cyan-400 font-semibold">Full-Stack Developer</span> by craft.
         </p>
 
         {/* CTA Buttons with clear hierarchy */}

@@ -26,7 +26,7 @@ const cardVariants = {
 
 const CompetitiveProgramming = () => {
   return (
-    <section id="profiles" className="relative py-20 lg:py-28 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 overflow-hidden"> 
+  <section id="profiles" className="relative py-20 lg:py-28 bg-white dark:bg-gradient-to-b dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 overflow-hidden transition-colors duration-300"> 
       {/* Background Decorative Elements */}
       <div className="absolute top-20 right-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
@@ -43,10 +43,10 @@ const CompetitiveProgramming = () => {
           <span className="inline-block px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm font-semibold mb-4">
             Coding Platforms
           </span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-            Competitive <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Programming</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white mb-4">
+            Competitive <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent dark:text-transparent text-slate-900">Programming</span>
           </h2>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+          <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto">
             Sharpening problem-solving skills across multiple competitive programming platforms
           </p>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto rounded-full mt-4"></div>

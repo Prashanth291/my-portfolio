@@ -19,7 +19,7 @@ const Footer = () => {
 
 
   return (
-    <footer className="relative bg-gradient-to-b from-slate-900 via-slate-950 to-black border-t border-slate-800/50 text-slate-400 overflow-hidden">
+  <footer className="relative bg-white dark:bg-gradient-to-b dark:from-slate-900 dark:via-slate-950 dark:to-black border-t border-slate-200 dark:border-slate-800/50 text-slate-900 dark:text-slate-400 overflow-hidden transition-colors duration-300">
       {/* Animated Background Elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl animate-pulse"></div>
@@ -46,11 +46,11 @@ const Footer = () => {
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center">
                 <FaCode className="text-white text-2xl" />
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+              <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent dark:text-transparent text-slate-900">
                 Prasanth Kumar
               </h3>
             </div>
-            <p className="text-slate-400 text-sm leading-relaxed mb-6 max-w-md">
+            <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 max-w-md">
               Aspiring Software Engineer passionate about solving complex problems through code. Specializing in full-stack development and competitive programming with a drive to create impactful solutions.
             </p>
             
@@ -64,16 +64,14 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
-                  className={`group relative w-11 h-11 flex items-center justify-center bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl text-slate-400 ${link.color} hover:border-cyan-500/50 transition-all duration-300`}
+                  className={`group relative w-11 h-11 flex items-center justify-center bg-slate-200/50 dark:bg-slate-800/50 backdrop-blur-sm border border-slate-300/50 dark:border-slate-700/50 rounded-xl text-slate-500 dark:text-slate-400 ${link.color} hover:border-cyan-500/50 transition-all duration-300`}
                   aria-label={link.name}
                 >
                   <span className="text-xl">{link.icon}</span>
-                  
                   {/* Tooltip */}
                   <span className="absolute -top-10 left-1/2 -translate-x-1/2 px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-xs text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none shadow-lg">
                     {link.name}
                   </span>
-                  
                   {/* Glow Effect */}
                   <div className="absolute inset-0 rounded-xl bg-cyan-500/0 group-hover:bg-cyan-500/10 transition-colors duration-300"></div>
                 </motion.a>
@@ -88,7 +86,7 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h4 className="text-white font-bold text-lg mb-6 flex items-center gap-2">
+            <h4 className="text-slate-900 dark:text-white font-bold text-lg mb-6 flex items-center gap-2">
               <span className="w-1 h-6 bg-gradient-to-b from-blue-500 to-cyan-500 rounded-full"></span>
               Quick Links
             </h4>
@@ -97,7 +95,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <a
                     href={link.url}
-                    className="group text-slate-400 hover:text-cyan-400 transition-colors duration-300 inline-flex items-center gap-3"
+                    className="group text-slate-600 dark:text-slate-400 hover:text-cyan-400 transition-colors duration-300 inline-flex items-center gap-3"
                   >
                     <span className="text-sm">{link.icon}</span>
                     <span className="text-sm">{link.name}</span>
@@ -115,7 +113,7 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h4 className="text-white font-bold text-lg mb-6 flex items-center gap-2">
+            <h4 className="text-slate-900 dark:text-white font-bold text-lg mb-6 flex items-center gap-2">
               <span className="w-1 h-6 bg-gradient-to-b from-blue-500 to-cyan-500 rounded-full"></span>
               Get In Touch
             </h4>
@@ -128,8 +126,8 @@ const Footer = () => {
                   <FaEnvelope className="w-4 h-4 text-cyan-400" />
                 </div>
                 <div className="flex-1">
-                  <p className="text-slate-500 text-xs mb-1">Email</p>
-                  <p className="text-slate-400 group-hover:text-cyan-400 transition-colors break-all">
+                  <p className="text-slate-500 dark:text-slate-400 text-xs mb-1">Email</p>
+                  <p className="text-slate-600 dark:text-slate-400 group-hover:text-cyan-400 transition-colors break-all">
                     prashanthbollinedi2910@gmail.com
                   </p>
                 </div>
@@ -140,8 +138,8 @@ const Footer = () => {
                   <FaMapMarkerAlt className="w-4 h-4 text-cyan-400" />
                 </div>
                 <div className="flex-1">
-                  <p className="text-slate-500 text-xs mb-1">Location</p>
-                  <p className="text-slate-400">Vijayawada, India</p>
+                  <p className="text-slate-500 dark:text-slate-400 text-xs mb-1">Location</p>
+                  <p className="text-slate-600 dark:text-slate-400">Vijayawada, India</p>
                 </div>
               </div>
 
@@ -152,9 +150,9 @@ const Footer = () => {
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                     <div className="absolute inset-0 w-2 h-2 bg-green-500 rounded-full animate-ping"></div>
                   </div>
-                  <span className="text-green-400 font-semibold text-sm">Available for Work</span>
+                  <span className="text-green-600 dark:text-green-400 font-semibold text-sm">Available for Work</span>
                 </div>
-                <p className="text-slate-400 text-xs">Open to new opportunities and collaborations</p>
+                <p className="text-slate-600 dark:text-slate-400 text-xs">Open to new opportunities and collaborations</p>
               </div>
             </div>
           </motion.div>
@@ -175,12 +173,12 @@ const Footer = () => {
 
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
             {/* Copyright */}
-            <div className="text-slate-500 text-center md:text-left">
+            <div className="text-slate-500 dark:text-slate-400 text-center md:text-left">
               <p>© {new Date().getFullYear()} <span className="text-cyan-400 font-semibold">Prasanth Kumar Bollinedi</span>. All Rights Reserved.</p>
             </div>
 
             {/* Crafted with */}
-            <div className="flex items-center gap-2 text-slate-500">
+            <div className="flex items-center gap-2 text-slate-500 dark:text-slate-400">
               <span>Crafted with</span>
               <FaHeart className="text-red-500 animate-pulse" />
               <span>using</span>
@@ -194,7 +192,7 @@ const Footer = () => {
               href="#home"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              className="group flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-blue-600/20 to-cyan-500/20 backdrop-blur-sm border border-slate-700/50 rounded-xl text-slate-400 hover:text-cyan-400 hover:border-cyan-500/50 transition-all duration-300"
+              className="group flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-blue-600/10 to-cyan-500/10 dark:from-blue-600/20 dark:to-cyan-500/20 backdrop-blur-sm border border-slate-300/50 dark:border-slate-700/50 rounded-xl text-slate-600 dark:text-slate-400 hover:text-cyan-400 hover:border-cyan-500/50 transition-all duration-300"
             >
               <span className="text-sm font-medium">Back to Top</span>
               <svg className="w-4 h-4 group-hover:-translate-y-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -18,7 +18,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
       whileHover={{ y: -8 }}
-      className="group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700/50 shadow-lg hover:shadow-2xl hover:border-cyan-500/50 transition-all duration-300"
+  className="group relative bg-white/90 dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700/50 shadow-lg hover:shadow-2xl hover:border-cyan-500/50 transition-all duration-300"
     >
       {/* Image Container with Overlay */}
       <div className="relative overflow-hidden h-56 bg-slate-900">
@@ -69,12 +69,12 @@ const ProjectCard = ({ project }: { project: Project }) => {
       {/* Content Section */}
       <div className="p-6">
         {/* Title */}
-        <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors duration-300">
+        <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-cyan-400 transition-colors duration-300">
           {project.title}
         </h3>
         
         {/* Description */}
-        <p className="text-slate-400 mb-5 line-clamp-3 leading-relaxed">
+        <p className="text-slate-900 dark:text-slate-200 mb-5 line-clamp-3 leading-relaxed">
           {project.description}
         </p>
         
