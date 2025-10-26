@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { FaUniversity, FaBriefcase } from 'react-icons/fa';
 import iiscLogo from '../assets/IISC_Master_Seal_Black.jpg';
 import pandusir from '../assets/PandurangaSir.png';
 
