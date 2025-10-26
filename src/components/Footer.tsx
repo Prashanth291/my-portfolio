@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaTwitter, FaHeart, FaEnvelope, FaMapMarkerAlt, FaCode } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaHeart, FaEnvelope, FaMapMarkerAlt, FaCode } from 'react-icons/fa';
 
 const Footer = () => {
   const socialLinks = [
@@ -17,11 +17,6 @@ const Footer = () => {
     { name: 'Contact', url: '#contact', icon: '📧' },
   ];
 
-  const stats = [
-    { number: '1500+', label: 'Problems Solved' },
-    { number: '3+', label: 'Projects Completed' },
-    { number: '10+', label: 'Technologies' },
-  ];
 
   return (
     <footer className="relative bg-gradient-to-b from-slate-900 via-slate-950 to-black border-t border-slate-800/50 text-slate-400 overflow-hidden">

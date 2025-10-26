@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 // Import icons from react-icons
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaJava } from 'react-icons/fa';
 import { FaPython } from 'react-icons/fa6';
-import { SiJavascript, SiTypescript, SiTailwindcss, SiMongodb, SiExpress, SiRedux, SiNextdotjs, SiDjango, SiC, SiFlask, SiMysql, SiPostgresql } from 'react-icons/si';
+import { SiJavascript, SiTypescript, SiTailwindcss, SiMongodb, SiExpress, SiDjango, SiC, SiFlask, SiMysql, SiPostgresql } from 'react-icons/si';
 
 // All skills in a single array
 const skills = [
@@ -92,7 +92,7 @@ const Skills = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {skills.map((skill, index) => (
+          {skills.map((skill) => (
             <motion.div
               key={skill.name}
               className="group relative aspect-square flex flex-col items-center justify-center p-4 bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-slate-700/50 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden"
