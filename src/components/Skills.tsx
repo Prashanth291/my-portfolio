@@ -2,13 +2,12 @@ import { motion } from 'framer-motion';
 // Import icons from react-icons
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaJava } from 'react-icons/fa';
 import { FaPython } from 'react-icons/fa6';
-import { SiJavascript, SiTypescript, SiTailwindcss, SiMongodb, SiExpress, SiDjango, SiC, SiFlask, SiMysql, SiPostgresql } from 'react-icons/si';
+import { SiJavascript, SiMongodb, SiExpress, SiDjango, SiC, SiFlask, SiMysql } from 'react-icons/si';
 
 // All skills in a single array
 const skills = [
   // Core Programming Languages
   { name: 'JavaScript', icon: <SiJavascript className="w-12 h-12" />, color: '#F7DF1E' },
-  { name: 'TypeScript', icon: <SiTypescript className="w-12 h-12" />, color: '#3178C6' },
   { name: 'Python', icon: <FaPython className="w-12 h-12" />, color: '#3776AB' },
   { name: 'Java', icon: <FaJava className="w-12 h-12" />, color: '#007396' },
   { name: 'C', icon: <SiC className="w-12 h-12" />, color: '#A8B9CC' },
@@ -17,7 +16,6 @@ const skills = [
   { name: 'React', icon: <FaReact className="w-12 h-12" />, color: '#61DAFB' },
   { name: 'HTML5', icon: <FaHtml5 className="w-12 h-12" />, color: '#E34F26' },
   { name: 'CSS3', icon: <FaCss3Alt className="w-12 h-12" />, color: '#1572B6' },
-  { name: 'Tailwind CSS', icon: <SiTailwindcss className="w-12 h-12" />, color: '#06B6D4' },
   
   // Backend Technologies
   { name: 'Node.js', icon: <FaNodeJs className="w-12 h-12" />, color: '#339933' },
@@ -27,7 +25,6 @@ const skills = [
   
   // Databases
   { name: 'MongoDB', icon: <SiMongodb className="w-12 h-12" />, color: '#47A248' },
-  { name: 'PostgreSQL', icon: <SiPostgresql className="w-12 h-12" />, color: '#4169E1' },
   { name: 'MySQL', icon: <SiMysql className="w-12 h-12" />, color: '#4479A1' },
   
   // Version Control

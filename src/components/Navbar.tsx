@@ -1,5 +1,12 @@
 import { useState } from 'react';
-import Logo from './Logo';
+
+// Sample Logo component - replace with your actual Logo
+type LogoProps = { className?: string };
+const Logo = ({ className }: LogoProps) => (
+  <div className={`${className} bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center text-white font-bold text-xl`}>
+    PK
+  </div>
+);
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +24,7 @@ const Navbar = () => {
     { title: 'Skills', path: '#skills' },  
     { title: 'Experience', path: '#experience' },
     { title: 'Profiles', path: '#profiles' }, 
-    {title:'Achievements', path: '#achievements'},
+    { title: 'Achievements', path: '#achievements' },
     { title: 'Projects', path: '#projects' },
     { title: 'Contact', path: '#contact' },
   ];
@@ -53,27 +60,27 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Mobile Menu Button with Animated Hamburger */}
+          {/* Mobile Menu Button with Themed Hamburger */}
           <div className="md:hidden">
             <button 
               onClick={toggleMenu} 
-              className="inline-flex items-center justify-center p-2 rounded-lg text-gray-700 hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 w-11 h-11"
+              className="inline-flex items-center justify-center p-2 rounded-lg bg-gradient-to-r from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 w-11 h-11 group"
               aria-label="Toggle Menu"
               aria-expanded={isOpen}
             >
               <div className="w-6 h-5 relative flex flex-col justify-between">
                 <span 
-                  className={`w-full h-0.5 bg-current rounded-full transform transition-all duration-300 ease-in-out ${
+                  className={`w-full h-0.5 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full transform transition-all duration-300 ease-in-out ${
                     isOpen ? 'rotate-45 translate-y-2' : ''
                   }`}
                 ></span>
                 <span 
-                  className={`w-full h-0.5 bg-current rounded-full transition-all duration-300 ease-in-out ${
+                  className={`w-full h-0.5 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full transition-all duration-300 ease-in-out ${
                     isOpen ? 'opacity-0' : 'opacity-100'
                   }`}
                 ></span>
                 <span 
-                  className={`w-full h-0.5 bg-current rounded-full transform transition-all duration-300 ease-in-out ${
+                  className={`w-full h-0.5 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full transform transition-all duration-300 ease-in-out ${
                     isOpen ? '-rotate-45 -translate-y-2' : ''
                   }`}
                 ></span>
@@ -94,7 +101,7 @@ const Navbar = () => {
             <a 
               key={link.title} 
               href={link.path} 
-              className="block px-4 py-3 rounded-lg text-base font-semibold text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-200 transform hover:translate-x-1"
+              className="block px-4 py-3 rounded-lg text-base font-semibold text-gray-700 hover:text-blue-600 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all duration-200 transform hover:translate-x-1"
               onClick={closeMenu}
               style={{
                 animation: isOpen ? `slideIn 0.3s ease-out ${index * 0.1}s both` : 'none'

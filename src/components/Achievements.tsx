@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { achievements } from '../achievementsData';
+import type { Variants } from 'framer-motion';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -10,8 +11,6 @@ const containerVariants = {
     }
   }
 };
-
-import type { Variants } from 'framer-motion';
 
 const cardVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -56,22 +55,20 @@ const Achievements = () => {
 
         {/* Horizontal Scrollable Achievement Cards */}
         <motion.div 
-          className="flex overflow-x-auto gap-6 pb-4 snap-x snap-mandatory hide-scrollbar"
+          className="grid grid-cols-1 gap-6 pb-4 lg:flex lg:overflow-x-auto lg:snap-x lg:snap-mandatory lg:hide-scrollbar"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          style={{
-            scrollbarWidth: 'none',  /* Firefox */
-            msOverflowStyle: 'none'  /* IE and Edge */
-          }}
+          // The inline 'style' prop for scrollbar hiding has been removed
         >
           {achievements.map((achievement) => (
             <motion.div
               key={achievement.id}
               variants={cardVariants}
               whileHover={{ y: -8 }}
-              className="group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700/50 shadow-lg hover:shadow-2xl hover:border-cyan-500/50 transition-all duration-300 flex-none w-[400px] snap-center"
+              // --- THIS IS THE RESPONSIVE FIX ---
+              className="group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700/50 shadow-lg hover:shadow-2xl hover:border-cyan-500/50 transition-all duration-300 flex-none w-11/12 sm:w-[380px] lg:w-[400px] snap-center"
             >
               {/* Image Container with Overlay */}
               <div className="relative overflow-hidden h-56 bg-slate-900">
@@ -84,13 +81,8 @@ const Achievements = () => {
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
                 
-                {/* Trophy Badge
-                <div className="absolute top-4 left-4 w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg">
-                  <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C11.5 2 11 2.19 10.59 2.59L2.59 10.59C1.8 11.37 1.8 12.63 2.59 13.41L10.59 21.41C11.37 22.2 12.63 22.2 13.41 21.41L21.41 13.41C22.2 12.63 22.2 11.37 21.41 10.59L13.41 2.59C13 2.19 12.5 2 12 2M12 4L20 12L12 20L4 12L12 4M7 14L9 12L7 10V14Z" />
-                  </svg>
-                </div> */}
-
+                {/* Trophy Badge (Commented out) */}
+                
                 {/* Date Badge */}
                 <div className="absolute top-4 right-4 px-3 py-1 bg-slate-900/80 backdrop-blur-sm border border-slate-700/50 rounded-full text-cyan-400 text-xs font-semibold">
                   {achievement.date}
@@ -135,8 +127,6 @@ const Achievements = () => {
                 
                 {/* Action Buttons */}
                 <div className="flex flex-wrap items-center gap-3">
-                  
-                  
                   {achievement.link && (
                     <a 
                       href={achievement.link}
