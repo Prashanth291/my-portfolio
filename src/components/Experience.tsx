@@ -1,10 +1,9 @@
 import { motion } from 'framer-motion';
-import iiscLogo from '../assets/IISC_Master_Seal_Black.jpg';
-import pandusir from '../assets/PandurangaSir.png';
+import pandusir from '/PandurangaSir.png';
 
 const experiences = [
   {
-    logo: iiscLogo, // Add your logo path here
+  logo: '/IISC_Master_Seal_Black.jpg',
     title: "Research Intern",
     company: "Indian Institute of Science (IISc), Bengaluru",
     period: "May 2025 – June 2025",

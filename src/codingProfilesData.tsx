@@ -10,25 +10,25 @@ export const profiles: CodingProfile[] = [
   {
     name: 'LeetCode',
     url: 'https://leetcode.com/u/prashanth_d4/',
-    image: '/src/assets/leetcode-logo.svg',
+    image: '/leetcode-logo.svg',
     color: '#FFA116'
   },
     {
     name: 'Codeforces',
     url: 'https://codeforces.com/profile/prashanth_2327',
-    image: '/src/assets/CodeForces-logo.svg',
+    image: '/CodeForces-logo.svg',
     color: '#1F8ACB'
   },
   {
     name: 'CodeChef',
     url: 'https://www.codechef.com/users/prashanth_d4',
-    image: '/src/assets/codechef_logo.png',
+    image: '/codechef_logo.png',
     color: '#684E39'
   },
   {
     name: 'GeeksforGeeks',
     url: 'https://www.geeksforgeeks.org/user/prashanth2327/',
-    image: '/src/assets/GfG-logo.png',
+    image: '/GfG-logo.png',
     color: '#2F8D46'
   },
 

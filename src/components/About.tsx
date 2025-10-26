@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 // Make sure to place a professional-looking photo in your `src/assets` folder
-import profilePic from '../assets/profile-picture.jpg'; 
+import profilePic from '/profile-picture.jpg'; 
 
 const About = () => {
   // This array can be used later if you want to add more stats
