@@ -1,6 +1,5 @@
 // In src/codingProfilesData.ts
 
-import type { JSX } from 'react';
 import { SiLeetcode, SiCodechef, SiGeeksforgeeks, SiCodeforces } from 'react-icons/si';
 
 // Define the type for a profile object for TypeScript
