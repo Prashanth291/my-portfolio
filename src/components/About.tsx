@@ -4,7 +4,7 @@ import profilePic from '../assets/profile-picture.jpg';
 
 const About = () => {
   // This array can be used later if you want to add more stats
-  const highlights = [
+  const highlights: any[] = [
     // { number: '10+', label: 'Technologies' }
   ];
 

@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import AnimatedText from './AnimatedText';
 import profilePhoto from '../assets/profile-picture.jpg';
 
 const Hero = () => {
