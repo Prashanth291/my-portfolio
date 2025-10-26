@@ -3,9 +3,9 @@ import { FaGithub, FaLinkedin, FaTwitter, FaHeart, FaEnvelope, FaMapMarkerAlt, F
 
 const Footer = () => {
   const socialLinks = [
-    { name: 'GitHub', icon: <FaGithub />, url: 'https://github.com/your-username', color: 'hover:text-gray-300' },
-    { name: 'LinkedIn', icon: <FaLinkedin />, url: 'https://linkedin.com/in/your-profile', color: 'hover:text-blue-400' },
-    { name: 'Twitter', icon: <FaTwitter />, url: 'https://twitter.com/your-handle', color: 'hover:text-sky-400' },
+    { name: 'GitHub', icon: <FaGithub />, url: 'https://github.com/prashanth291', color: 'hover:text-gray-300' },
+    { name: 'LinkedIn', icon: <FaLinkedin />, url: 'www.linkedin.com/in/prasanth-kumar-bollinedi', color: 'hover:text-blue-400' },
+    // { name: 'Twitter', icon: <FaTwitter />, url: 'https://twitter.com/your-handle', color: 'hover:text-sky-400' },
   ];
 
   const quickLinks = [

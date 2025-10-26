@@ -27,7 +27,7 @@ export const profiles: CodingProfile[] = [
   {
     name: 'CodeChef',
     url: 'https://www.codechef.com/users/prashanth_d4',
-    image: '/src/assets/leetcode-logo.svg',
+    image: '/src/assets/codechef_logo.png',
     color: '#684E39'
   },
   {
