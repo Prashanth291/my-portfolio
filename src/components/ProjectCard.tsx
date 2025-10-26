@@ -83,7 +83,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
           {project.tags.map((tag) => (
             <span 
               key={tag} 
-              className="px-3 py-1.5 bg-slate-700/50 backdrop-blur-sm text-cyan-400 text-xs font-semibold rounded-lg border border-slate-600/50 hover:border-cyan-500/50 hover:bg-slate-700 transition-all duration-200"
+              className="px-3 py-1.5 bg-cyan-100 dark:bg-slate-700/50 backdrop-blur-sm text-cyan-700 dark:text-cyan-400 text-xs font-semibold rounded-lg border border-cyan-200 dark:border-slate-600/50 hover:border-cyan-400 hover:bg-cyan-200 dark:hover:bg-slate-700 transition-all duration-200"
             >
               {tag}
             </span>

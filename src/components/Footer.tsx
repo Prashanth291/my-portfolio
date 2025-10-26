@@ -26,7 +26,6 @@ const Footer = () => {
     { name: 'About', url: '#about', icon: '👤' },
     { name: 'Skills', url: '#skills', icon: '⚡' },
     { name: 'Projects', url: '#projects', icon: '💼' },
-    { name: 'Achievements', url: '#achievements', icon: '🏆' },
     { name: 'Contact', url: '#contact', icon: '📧' },
   ];
 
@@ -181,10 +180,8 @@ const Footer = () => {
             <div className="flex items-center gap-2 text-slate-500 dark:text-slate-400">
               <span>Crafted with</span>
               <FaHeart className="text-red-500 animate-pulse" />
-              <span>using</span>
-              <span className="text-cyan-400 font-semibold">React</span>
-              <span>&</span>
-              <span className="text-cyan-400 font-semibold">Tailwind CSS</span>
+              <span>by</span>
+              <span className="text-cyan-400 font-semibold">Prasanth Kumar</span>
             </div>
 
             {/* Back to Top Button */}
