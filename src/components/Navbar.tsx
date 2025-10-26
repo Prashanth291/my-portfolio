@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Logo from './Logo';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,8 @@ const Navbar = () => {
           
           {/* Logo/Name */}
           <div className="flex-shrink-0 group">
-            <a href="/" className="relative text-2xl font-bold text-gray-900 tracking-tight">
+            <a href="/" className="relative flex items-center gap-3 text-2xl font-bold text-gray-900 tracking-tight">
+              <Logo className="w-10 h-10 rounded-md" />
               <span className="relative z-10 bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent hover:from-cyan-500 hover:to-blue-600 transition-all duration-300">
                 Prasanth Kumar
               </span>

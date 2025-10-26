@@ -14,7 +14,7 @@ const Hero = () => {
       
       {/* ## Left Column: Text Content ## */}
       <motion.div 
-        className="lg:w-[55%] text-center lg:text-left z-10"
+        className="lg:w-[45%] text-center lg:text-left z-10 ml-16"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -69,7 +69,7 @@ const Hero = () => {
 
       {/* ## Right Column: Image (Now cleaner without badges) ## */}
       <motion.div 
-        className="lg:w-[45%] flex justify-center lg:justify-end mb-12 lg:mb-0 z-10"
+        className="lg:w-[45%] flex justify-center lg:10 mb-12 lg:mb-0 z-10 "
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.3, ease: [0, 0.71, 0.2, 1.01] }}
@@ -94,22 +94,7 @@ const Hero = () => {
         </div>
       </motion.div>
 
-    {/* ## Scroll Down Indicator ## */}
-    <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
-        <a href="#about" aria-label="Scroll to next section">
-            <div className="w-6 h-10 border-2 border-slate-600 rounded-full flex justify-center items-start p-1">
-                <motion.div
-                    className="w-1 h-2 bg-slate-400 rounded-full"
-                    animate={{ y: [0, 12, 0] }}
-                    transition={{
-                        duration: 1.5,
-                        repeat: Infinity,
-                        repeatType: "loop",
-                    }}
-                />
-            </div>
-        </a>
-    </div>
+   
 
     </section>
   );

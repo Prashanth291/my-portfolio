@@ -2,31 +2,22 @@ import { motion } from 'framer-motion';
 import { FaUniversity, FaBriefcase } from 'react-icons/fa';
 import iiscLogo from '../assets/IISC_Master_Seal_Black.jpg';
 import pandusir from '../assets/PandurangaSir.png';
+
 const experiences = [
   {
     logo: iiscLogo, // Add your logo path here
     title: "Research Intern",
-    company: "Indian Institute of Science (IISc), Bangalore",
+    company: "Indian Institute of Science (IISc), Bengaluru",
     period: "May 2025 – June 2025",
     description: [
-      "Contributed to research in Machine Learning and Computational Biology",
-      "Developed and implemented algorithms using Python and MATLAB to analyze experimental data",
-      "Collaborated with professors and PhD students to publish findings in research paper",
-      "Optimized data processing pipelines, improving efficiency by 40%"
+      "Worked under the guidance of Prof. Chandrasekaran Pandurangan, collaborating with researchers and PhD students on advanced algorithmic problems.",
+      "Applied formal algorithmic techniques and theoretical proofs to solve complex computational problems, ensuring correctness and optimizing performance.",
+      "Designed and implemented scalable algorithms for disk-based systems, leveraging B-Trees, multi-level indexing, and external sorting to enhance data management efficiency.",
     ]
   },
-  // Add more experiences here
-  // {
-  //   logo: "/path/to/company-logo.png",
-  //   title: "Frontend Developer",
-  //   company: "Tech Company",
-  //   period: "Jan 2024 – Present",
-  //   description: [
-  //     "Built responsive web applications using React and TypeScript",
-  //     "Collaborated with design team to implement pixel-perfect UIs",
-  //   ]
-  // }
 ];
+
+
 
 const Experience = () => {
   return (
