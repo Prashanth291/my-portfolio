@@ -8,8 +8,13 @@ type NavbarProps = {
 // Sample Logo component - replace with your actual Logo
 type LogoProps = { className?: string };
 const Logo = ({ className }: LogoProps) => (
-  <div className={`${className} bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center text-white font-bold text-xl`}>
-    PK
+  <div className={className} style={{ width: 40, height: 40 }}>
+    <img
+      src="/logo.png"
+      alt="Logo"
+      className="w-full h-full object-contain rounded-md"
+      style={{ maxWidth: 40, maxHeight: 40 }}
+    />
   </div>
 );
 

@@ -1,5 +1,18 @@
-import { motion } from 'framer-motion';
+
 import { FaGithub, FaLinkedin, FaHeart, FaEnvelope, FaMapMarkerAlt, FaCode } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+
+// Logo component (same as Navbar)
+const Logo = ({ className }: { className?: string }) => (
+  <div className={className} style={{ width: 36, height: 36 }}>
+    <img
+      src="/logo.png"
+      alt="Logo"
+      className="w-full h-full object-contain rounded-md"
+      style={{ maxWidth: 36, maxHeight: 36 }}
+    />
+  </div>
+);
 
 const Footer = () => {
   const socialLinks = [
@@ -43,9 +56,7 @@ const Footer = () => {
             className="lg:col-span-2"
           >
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center">
-                <FaCode className="text-white text-2xl" />
-              </div>
+              <Logo className="w-10 h-10" />
               <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent dark:text-transparent text-slate-900">
                 Prasanth Kumar
               </h3>
@@ -143,17 +154,6 @@ const Footer = () => {
                 </div>
               </div>
 
-              {/* Availability Badge */}
-              <div className="mt-6 p-4 bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-xl">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="relative">
-                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <div className="absolute inset-0 w-2 h-2 bg-green-500 rounded-full animate-ping"></div>
-                  </div>
-                  <span className="text-green-600 dark:text-green-400 font-semibold text-sm">Available for Work</span>
-                </div>
-                <p className="text-slate-600 dark:text-slate-400 text-xs">Open to new opportunities and collaborations</p>
-              </div>
             </div>
           </motion.div>
         </div>
